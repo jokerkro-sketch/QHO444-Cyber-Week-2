@@ -6,4 +6,5 @@ book = input()
 if book.lower() == "adventure":
     print("I like adventure book")
 
+# exit from if-statement
 print("Finished reading...!")
