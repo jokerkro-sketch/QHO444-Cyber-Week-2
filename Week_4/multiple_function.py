@@ -1,15 +1,18 @@
-Łukasz Cudzich 9.11.2025 11:43 •
-def display_box(name):
-message = f"* Hello {name} *"
-print ("*", len(message))
-print(message)
-print("*" * len(message))
+def sum_weights(person_weight, ivertory_weight):
+    total_weight = person_weight + ivertory_weight
+    return total_weight
 
+def calc_avg_weight(person_weight, ivertory_weight):
+    avg_weight = sum_weights(person_weight, ivertory_weight)
+    avg_weight = avg_weight / 2
 
-def greet_user():
-print("please enter your name")
-name = input()
-display_box(name)
+    def run():
+        weight = float(input("enter the weight: "))
 
+        i_weight = float(input("Enter the Invertory weight: "))
 
-greet_user()
+        print("What would you like to calculate (sum or average)?")
+        action = input()
+
+        if action == "sum":
+            answer = sum_weights(weight, i_weight)
