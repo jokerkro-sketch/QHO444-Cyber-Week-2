@@ -16,3 +16,9 @@ def calc_avg_weight(person_weight, ivertory_weight):
 
         if action == "sum":
             answer = sum_weights(weight, i_weight)
+            print(f"The sum of weights is {answer:.2f}")
+        elif action == "average":
+            answer = calc_avg_weight(weight, i_weight)
+            print(f"The average of weights is {answer:.2f}")
+        else:
+            print("I am not sure what you would like to do.")
