@@ -6,6 +6,7 @@ def pattern():
     }
     return sequences
 def run():
-    print (pattern())
+    result = pattern()
+    print(result)
 
 run()
