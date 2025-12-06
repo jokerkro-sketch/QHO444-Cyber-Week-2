@@ -5,3 +5,7 @@ def pattern():
         "Long Sequence": 1
     }
     return sequences
+def run():
+    print (pattern())
+
+run()
