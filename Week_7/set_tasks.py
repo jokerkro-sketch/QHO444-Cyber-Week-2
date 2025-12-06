@@ -3,7 +3,7 @@ def observed():
     return observations
 
 def run_task1():
-    result = observed()      # Call the first function
+    result = observed()
     print(result)
 
 if __name__ == "__main__":
