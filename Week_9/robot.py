@@ -15,8 +15,14 @@ class Robot:
     def __init__(self, name="Robot"):
 
         self.name = name
-        self.age = 0
-        self.energy = 0
+        self.age = 30
+        self.energy = 20
+
+    def __repr__(self):
+        return f'robot(name={self.name}, age={self.age} , energy={self.energy})'
+
+    def __str__(self):
+        return f'Robot {self.name} is {self.age} years old.'
 
     def display(self):
 
@@ -25,3 +31,4 @@ class Robot:
 if __name__ == "__main__":
     robot = Robot()
     robot.display()
+    print(repr(robot))
