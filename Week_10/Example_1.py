@@ -1,3 +1,13 @@
+from abc import ABC
+
+
+
+
+
+
+
+
+
 class Animal:
    def eat(selfself):
        print("This animal is eating food")
